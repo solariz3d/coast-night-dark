@@ -1,0 +1,19 @@
+--- original/extension/ext_config.ini
++++ night-dark/extension/ext_config.ini
+@@ -37,7 +37,7 @@
+ VISIBILITY_LEVEL = 1
+ MATERIALS = Stadiumlight
+ KEY_0 = ksEmissive
+-VALUE_0 = 1, 0.95, 0.8, 25
++VALUE_0 = 1, 0.95, 0.8, 0
+ VALUE_0_OFF = 1,1,1,0
+ ACTIVE = 1
+ 
+@@ -60,6 +60,7 @@
+ ACTIVE = 1
+ 
+ [LIGHT_SERIES_...]
++ACTIVE = 0 ; coast-night-dark: the stadium floods cast no light
+ CONDITION = NIGHT_SHARP
+ MATERIALS = Stadiumlight  ; or, you could use "MESHES = material:glowing_material?"
+ OFFSET = X, Y, Z  ; optional offset in meters
